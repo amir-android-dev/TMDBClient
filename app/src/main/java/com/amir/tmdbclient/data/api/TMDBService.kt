@@ -1,8 +1,8 @@
 package com.amir.tmdbclient.data.api
 
-import com.amir.tmdbclient.data.ArtistList
-import com.amir.tmdbclient.data.MovieList
-import com.amir.tmdbclient.data.TvShowList
+import com.amir.tmdbclient.data.model.artist.ArtistList
+import com.amir.tmdbclient.data.model.movie.MovieList
+import com.amir.tmdbclient.data.model.tvshow.TvShowList
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query

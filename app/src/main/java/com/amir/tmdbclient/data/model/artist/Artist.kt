@@ -1,14 +1,15 @@
-package com.amir.tmdbclient.data
+package com.amir.tmdbclient.data.model.artist
 
-
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 import com.google.gson.annotations.SerializedName
 
+//Actually providing a different name for the data base table is the best practice. so we change the name of the entity
+@Entity(tableName = "popular_artist")
 data class Artist(
-
+    @PrimaryKey
     @SerializedName("id")
     val id: Int,
-    @SerializedName("known_for")
-    val knownFor: List<KnownFor>?,
     @SerializedName("name")
     val name: String?,
     @SerializedName("popularity")
