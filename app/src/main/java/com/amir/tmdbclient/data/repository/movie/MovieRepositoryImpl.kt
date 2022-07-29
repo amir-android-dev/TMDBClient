@@ -1,4 +1,4 @@
-package com.amir.tmdbclient.data.repository
+package com.amir.tmdbclient.data.repository.movie
 
 import android.util.Log
 import com.amir.tmdbclient.data.model.movie.Movie
