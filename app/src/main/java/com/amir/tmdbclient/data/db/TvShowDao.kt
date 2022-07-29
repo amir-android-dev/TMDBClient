@@ -7,7 +7,6 @@ import androidx.room.Query
 import com.amir.tmdbclient.data.model.tvshow.TvShow
 
 
-
 @Dao
 interface TvShowDao {
 
@@ -18,6 +17,6 @@ interface TvShowDao {
     suspend fun deleteAllTvShows()
 
     @Query("select * from popular_tvShows")
-    suspend fun getTvShows(tvShows: List<TvShow>)
+    suspend fun getTvShows(): List<TvShow>
 
 }
