@@ -2,6 +2,9 @@ package com.amir.tmdbclient.data.repository.artist
 
 import android.util.Log
 import com.amir.tmdbclient.data.model.artist.Artist
+import com.amir.tmdbclient.data.repository.artist.datasource.ArtistCacheDataSource
+import com.amir.tmdbclient.data.repository.artist.datasource.ArtistLocalDataSource
+import com.amir.tmdbclient.data.repository.artist.datasource.ArtistRemoteDataSource
 import com.amir.tmdbclient.domain.repository.ArtistRepository
 
 //1-8

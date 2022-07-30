@@ -1,13 +1,14 @@
-package com.amir.tmdbclient.data.repository.tvshow
+package com.amir.tmdbclient.data.repository.tvshow.datasourceImpl
 
 import com.amir.tmdbclient.data.db.TvShowDao
 import com.amir.tmdbclient.data.model.tvshow.TvShow
+import com.amir.tmdbclient.data.repository.tvshow.datasource.TvShowLocalDataSource
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
 //6
-class TvShowLocalDataSourceImpl(private val tvShowDao: TvShowDao):TvShowLocalDataSource{
+class TvShowLocalDataSourceImpl(private val tvShowDao: TvShowDao): TvShowLocalDataSource {
 
     override suspend fun getTvShowsFromDB(): List<TvShow> {
       return tvShowDao.getTvShows()

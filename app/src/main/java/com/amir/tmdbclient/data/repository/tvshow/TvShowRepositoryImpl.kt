@@ -2,6 +2,9 @@ package com.amir.tmdbclient.data.repository.tvshow
 
 import android.util.Log
 import com.amir.tmdbclient.data.model.tvshow.TvShow
+import com.amir.tmdbclient.data.repository.tvshow.datasource.TvShowCacheDataSource
+import com.amir.tmdbclient.data.repository.tvshow.datasource.TvShowLocalDataSource
+import com.amir.tmdbclient.data.repository.tvshow.datasource.TvShowRemoteDataSource
 import com.amir.tmdbclient.domain.repository.TvShowsRepository
 
 class TvShowRepositoryImpl(

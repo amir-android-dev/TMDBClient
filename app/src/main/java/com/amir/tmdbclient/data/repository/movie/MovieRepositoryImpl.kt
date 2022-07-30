@@ -2,6 +2,9 @@ package com.amir.tmdbclient.data.repository.movie
 
 import android.util.Log
 import com.amir.tmdbclient.data.model.movie.Movie
+import com.amir.tmdbclient.data.repository.movie.datasource.MovieCacheDataSource
+import com.amir.tmdbclient.data.repository.movie.datasource.MovieLocalDataSource
+import com.amir.tmdbclient.data.repository.movie.datasource.MovieRemoteDataSource
 import com.amir.tmdbclient.domain.repository.MovieRepository
 
 //1-8

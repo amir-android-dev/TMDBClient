@@ -1,4 +1,4 @@
-package com.amir.tmdbclient.data.repository.movie
+package com.amir.tmdbclient.data.repository.movie.datasource
 
 import com.amir.tmdbclient.data.model.movie.MovieList
 import retrofit2.Response

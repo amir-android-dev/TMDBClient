@@ -1,6 +1,7 @@
-package com.amir.tmdbclient.data.repository.tvshow
+package com.amir.tmdbclient.data.repository.tvshow.datasourceImpl
 
 import com.amir.tmdbclient.data.model.tvshow.TvShow
+import com.amir.tmdbclient.data.repository.tvshow.datasource.TvShowCacheDataSource
 
 class TvShowCacheDataSourceImpl : TvShowCacheDataSource {
 

@@ -1,7 +1,8 @@
-package com.amir.tmdbclient.data.repository.movie
+package com.amir.tmdbclient.data.repository.movie.datasourceImpl
 
 import com.amir.tmdbclient.data.api.TMDBService
 import com.amir.tmdbclient.data.model.movie.MovieList
+import com.amir.tmdbclient.data.repository.movie.datasource.MovieRemoteDataSource
 import retrofit2.Response
 
 //5

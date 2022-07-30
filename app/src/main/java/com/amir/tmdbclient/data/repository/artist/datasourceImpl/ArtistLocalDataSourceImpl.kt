@@ -1,13 +1,14 @@
-package com.amir.tmdbclient.data.repository.artist
+package com.amir.tmdbclient.data.repository.artist.datasourceImpl
 
 import com.amir.tmdbclient.data.db.ArtistDao
 import com.amir.tmdbclient.data.model.artist.Artist
+import com.amir.tmdbclient.data.repository.artist.datasource.ArtistLocalDataSource
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
 //6
-class ArtistLocalDataSourceImpl(private val artistDao:ArtistDao):ArtistLocalDataSource {
+class ArtistLocalDataSourceImpl(private val artistDao:ArtistDao): ArtistLocalDataSource {
 
     override suspend fun getArtistsFromDB(): List<Artist> {
     return  artistDao.getArtists()

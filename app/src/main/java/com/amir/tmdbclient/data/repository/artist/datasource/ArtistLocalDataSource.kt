@@ -1,4 +1,4 @@
-package com.amir.tmdbclient.data.repository.artist
+package com.amir.tmdbclient.data.repository.artist.datasource
 
 import com.amir.tmdbclient.data.model.artist.Artist
 //3

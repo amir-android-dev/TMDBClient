@@ -1,4 +1,4 @@
-package com.amir.tmdbclient.data.repository.tvshow
+package com.amir.tmdbclient.data.repository.tvshow.datasource
 
 import com.amir.tmdbclient.data.model.tvshow.TvShow
 //4
