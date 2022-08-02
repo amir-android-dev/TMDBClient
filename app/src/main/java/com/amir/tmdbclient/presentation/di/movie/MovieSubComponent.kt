@@ -1,0 +1,18 @@
+package com.amir.tmdbclient.presentation.di.movie
+
+
+import com.amir.tmdbclient.presentation.movie.MovieActivity
+import dagger.Subcomponent
+
+
+@MovieScope
+@Subcomponent(modules = [MovieModule::class])
+interface MovieSubComponent {
+
+
+    fun inject(movieActivity: MovieActivity)
+    @Subcomponent.Factory
+    interface Factory{
+        fun create(): MovieSubComponent
+    }
+}
